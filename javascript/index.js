@@ -6,7 +6,7 @@ const urls = {
   facebookURL: 'https://www.facebook.com/williams.godswill.39/',
   twitterURL: 'https://twitter.com/William33199979',
   linkedinURL: 'https://www.linkedin.com/in/williams-alex-17b3201a3/',
-  resumeURL: 'resume/resume.pdf'
+  resumeURL: 'resume/my-resume.pdf'
 };
 
 //Destructured route object
