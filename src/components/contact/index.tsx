@@ -1,8 +1,7 @@
 import { Formik } from "formik";
 import { TextInput, TextArea } from "../input";
 import { Button } from "../button";
-
-import { contactValidation } from "../../utils/validation";
+import { contactValidation } from "./validation";
 import styles from "./styles.module.scss";
 
 export const Contact = () => {

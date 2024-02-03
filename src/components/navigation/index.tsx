@@ -1,8 +1,8 @@
 import { FC } from "react";
 import styles from "./styles.module.scss";
-import { menuList } from "../../constants";
 import { FaceBook, Twitter, Linkendin, Instagram, GitHub, Hambugger } from "..";
 import Logo from "../../static/images/logo.png";
+import { menuList } from "./constant";
 
 interface Props {
   handleOpenClose: () => void;
