@@ -1,0 +1,12 @@
+.inputLabel {
+  @apply after:content-['*'] after:ml-0.5 block text-sm font-[500] leading-8 text-primary-blue-100;
+}
+
+.textInput,
+.textArea {
+  @apply border-primary-blue-100 w-full ring-1 border block outline-none px-3 py-3 rounded-lg;
+}
+
+.textArea {
+  @apply h-[150px];
+}

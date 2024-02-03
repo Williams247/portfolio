@@ -1,0 +1,23 @@
+.footerContainer {
+  @apply flex
+  flex-col
+  sm:flex-col
+  md:flex-col
+  lg:flex-row
+  xl:flex-row
+  lg:justify-between
+  xl:justify-between;
+  .contextAndIcon {
+    @apply flex
+    flex-col
+    sm:flex-col
+    md:flex-col
+    lg:flex-row
+    xl:flex-row
+    mt-3 sm:mt-3
+    md:mt-3 lg:mt-0 xl:mt-0;
+  }
+  .footerEmailSection {
+    @apply flex px-2 mt-3 sm:mt-3 md:mt-3 lg:mt-0 xl:mt-0;
+  }
+}
