@@ -1,6 +1,6 @@
 export const NodeIcon = () => (
   <svg
-    className={"w-[6rem] h-[6rem] mt-4"}
+    className={"w-[6rem] h-[6rem] -mt-10"}
     viewBox="0 0 256 282"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMinYMin meet"

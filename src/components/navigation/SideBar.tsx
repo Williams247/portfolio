@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { menuList } from "../../constants";
+import { menuList } from "./constant";
 import Logo from "../../static/images/logo.png";
 import styles from "./styles.module.scss";
 
