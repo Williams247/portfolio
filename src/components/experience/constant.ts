@@ -6,7 +6,7 @@ interface Props {
   type: string;
 }
 
-export const experiences: Props[] = [
+export const experiences: Array<Props> = [
   {
     company: "Uburu Health",
     timeframe: "Mar 2023 - Present",
@@ -23,6 +23,8 @@ export const experiences: Props[] = [
       "Built the company's website using Next js.",
       "Built various email templates using vanilla Html and Css",
       "Built an e-learning or edu tech platform using both Nuxt js and Next/Nx, you can learn various skills from this platform, for more head on to https://skillpaddy.com",
+      "Made modifications and upgraded a financial platform where you can basically apply for loans.",
+      "Modified and built a job application platform, this forum allows users to be able to apply and create jobs."
     ],
     role: "Software Engineer",
     type: "Full-time",

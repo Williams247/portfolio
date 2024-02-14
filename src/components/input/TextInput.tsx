@@ -1,5 +1,4 @@
 import { ChangeEvent, FC } from "react";
-import styles from "./styles.module.scss";
 
 interface Props {
   inputType: string;
@@ -28,7 +27,7 @@ export const TextInput: FC<Props> = ({
 }) => (
   <div className="w-full">
     <label htmlFor={htmlFor} className={`block`}>
-      <span className={`${isRequired && styles.inputLabel}`}>{label}</span>
+      <span className={`${isRequired && "after:content-['*'] after:ml-0.5 block text-sm font-[500] leading-8 text-primary-blue-100"}`}>{label}</span>
     </label>
     <input
       type={inputType}
@@ -36,7 +35,7 @@ export const TextInput: FC<Props> = ({
       value={inputValue}
       onChange={changeEvent}
       name={name}
-      className={styles.textInput}
+      className={"border-primary-blue-100 w-full ring-1 border block outline-none px-3 py-3 rounded-lg"}
     />
     {htmlFor && (
       <p className="text-sm text-[red] mt-3">

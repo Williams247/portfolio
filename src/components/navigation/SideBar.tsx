@@ -1,15 +1,14 @@
 import { FC } from "react";
 import { menuList } from "./constant";
 import Logo from "../../static/images/logo.png";
-import styles from "./styles.module.scss";
 
 interface Props {
   handleOpenClose: () => void;
 }
 
 export const SideBar: FC<Props> = ({ handleOpenClose }) => (
-  <div className={styles.sideBar}>
-    <div className={styles.sideBarContent}>
+  <div className={"bg-[rgba(0,0,0,0.4)] block sm:block md:block lg:hidden xl:hidden w-full fixed bottom-0 right-0 left-0 z-20 h-full"}>
+    <div className={"bg-white w-[350px] h-full px-10 py-5"}>
       <div>
         <button className="text-[50px] float-right" onClick={handleOpenClose}>
           &times;

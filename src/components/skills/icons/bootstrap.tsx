@@ -2,7 +2,7 @@ export const Bootstrap = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 48 48"
-    className={"w-[7.5rem] h-[7.5rem] -mt-10"}
+    className={"w-[6rem] h-[6rem] mt-2"}
     baseProfile="basic"
   >
     <linearGradient
@@ -13,15 +13,15 @@ export const Bootstrap = () => (
       y2="7"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stopColor="#558bff" />
-      <stop offset=".011" stopColor="#558bff" />
-      <stop offset=".135" stopColor="#558bff" />
-      <stop offset=".193" stopColor="#558bff" />
-      <stop offset=".248" stopColor="#558bff" />
-      <stop offset=".388" stopColor="#558bff" />
-      <stop offset=".732" stopColor="#558bff" />
-      <stop offset=".997" stopColor="#558bff" />
-      <stop offset=".998" stopColor="#558bff" />
+      <stop offset="0" stopColor="#643499" />
+      <stop offset=".011" stopColor="#68369f" />
+      <stop offset=".135" stopColor="#773db6" />
+      <stop offset=".193" stopColor="#8042c3" />
+      <stop offset=".248" stopColor="#8343c8" />
+      <stop offset=".388" stopColor="#8444c9" />
+      <stop offset=".732" stopColor="#9751d2" />
+      <stop offset=".997" stopColor="#9c55d4" />
+      <stop offset=".998" stopColor="#9c55d4" />
       <stop offset="1" stopColor="#9c55d4" />
     </linearGradient>
     <path

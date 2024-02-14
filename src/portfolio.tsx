@@ -5,19 +5,20 @@ import {
   Hero,
   Container,
   About,
-  Location,
+  Contact,
   Skills,
   Footer,
   SideBar,
-  Experience
+  Experience,
+  Projects,
 } from "./components";
 
-const PortFolio = (): JSX.Element => {
+const PortFolio = () => {
   const [open, setOpen] = useState(false);
   const handleOpenClose = (): void => setOpen(!open);
   return (
     <>
-      <div className="bg-black py-14 w-full">
+      <div className="bg-black py-6 w-full">
         <Container>
           <div className={"flex justify-center w-full"}>
             <Navigation handleOpenClose={handleOpenClose} />
@@ -29,7 +30,8 @@ const PortFolio = (): JSX.Element => {
         <About />
         <Skills />
         <Experience />
-        <Location />
+        <Projects />
+        <Contact />
         <Footer />
         {open && <SideBar handleOpenClose={handleOpenClose} />}
       </div>

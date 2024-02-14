@@ -1,5 +1,4 @@
 import { FC } from "react";
-import styles from "./styles.module.scss";
 
 interface Props {
   label: string;
@@ -7,7 +6,7 @@ interface Props {
 
 export const Caption: FC<Props> = ({ label }) => (
   <>
-    <p className={styles.captionLabel}>{label}</p>
-    <div className={styles.captionUnderline}></div>
+    <p className={'text-[30px] text-primary-blue-100 font-bold'}>{label}</p>
+    <div className={'h-[8px] w-[50px] bg-primary-blue-100'}></div>
   </>
 );

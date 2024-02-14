@@ -17,10 +17,6 @@ export const menuList: MenuListProps[] = [
     label: "Skills",
   },
   {
-    path: "#location",
-    label: "Location",
-  },
-  {
     path: "#footer",
     label: "Contact",
   },

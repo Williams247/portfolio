@@ -2,7 +2,7 @@ export const Tailwind = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 48 48"
-    className={"w-[8rem] h-[8rem] -mt-10"}
+    className={"w-[6rem] h-[6rem] mt-3"}
   >
     <linearGradient
       id="iOmQfjoCC4Hw6zVwRjSDha"
@@ -12,8 +12,8 @@ export const Tailwind = () => (
       y2="36.552"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stopColor="#558bff" />
-      <stop offset="1" stopColor="#558bff" />
+      <stop offset="0" stopColor="#00c1e0" />
+      <stop offset="1" stopColor="#009bb8" />
     </linearGradient>
     <path
       fill="url(#iOmQfjoCC4Hw6zVwRjSDha)"
