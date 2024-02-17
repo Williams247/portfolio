@@ -1,4 +1,5 @@
 import React from "react";
+import { Toaster } from 'react-hot-toast';
 import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./portfolio";
@@ -10,6 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App />
+    <Toaster />
   </React.StrictMode>
 );
 

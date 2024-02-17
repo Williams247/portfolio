@@ -11,7 +11,9 @@ export const Navigation: FC<Props> = ({ handleOpenClose }) => {
   const [scrolled, setScrolled] = useState(false);
 
   window.addEventListener("scroll", function () {
-    const scrolledAt = document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000;
+    const scrolledAt =
+      document.body.scrollTop > 1000 ||
+      document.documentElement.scrollTop > 1000;
     if (scrolledAt) setScrolled(true);
     else setScrolled(false);
   });
@@ -24,10 +26,12 @@ export const Navigation: FC<Props> = ({ handleOpenClose }) => {
           : "border border-transparent"
       }`}
     >
-      <div className="flex">
-        <img src={Logo} alt="Portfolio sign" width={50} />
-        <div className="mt-3 font-[500] font-[10px]">Williams</div>
-      </div>
+      <a href="/#">
+        <div className="flex">
+          <img src={Logo} alt="Portfolio sign" width={50} />
+          <div className="mt-3 font-[500] font-[10px]">Williams</div>
+        </div>
+      </a>
       <div>
         <ul
           className={
@@ -59,19 +63,29 @@ export const Navigation: FC<Props> = ({ handleOpenClose }) => {
       </div>
       <div className={"hidden sm:hidden md:hidden lg:flex xl:flex"}>
         <button className="px-1 active:scale-90">
-          <GitHub />
+          <a href={"https://github.com/Williams247"}>
+            <GitHub />
+          </a>
         </button>
         <button className="px-1 active:scale-90">
-          <FaceBook />
+          <a href={"https://web.facebook.com/williams.godswill.39/"}>
+            <FaceBook />
+          </a>
         </button>
         <button className="px-1 active:scale-90">
-          <Twitter />
+          <a href={"https://twitter.com/William33199979"}>
+            <Twitter />
+          </a>
         </button>
         <button className="px-1 active:scale-90">
-          <Linkendin />
+          <a href={"https://www.linkedin.com/in/williams-alex-17b3201a3/"}>
+            <Linkendin />
+          </a>
         </button>
         <button className="px-1 active:scale-90">
-          <Instagram />
+          <a href={"https://www.instagram.com/williamsgilfoil/"}>
+            <Instagram />
+          </a>
         </button>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { experiences } from "./constant";
 export const Experience = () => (
   <>
     <Container>
-      <div className={"mt-10"}>
+      <div id={"experience"} className={"mt-10"}>
         <Caption label="Experience" />
         <div className={"flex mt-10 w-full justify-between flex-wrap"}>
           {experiences.map((x, index) => (

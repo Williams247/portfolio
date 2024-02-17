@@ -4,7 +4,7 @@ import { skills } from "./constants";
 
 export const Skills = () => (
   <Container>
-    <div className={"mt-10"}>
+    <div id={"skills"} className={"mt-10"}>
       <Caption label={"Skills"} />
       <div className={"flex justify-center"}>
         <div className={"mt-10 flex md:gap-10 w-full flex-wrap"}>
