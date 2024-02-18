@@ -27,7 +27,7 @@ export const Hero = () => (
             applications. I love to achieve my goals.
           </p>
           <div className={"mt-14 md:mt-10 flex md:justify-center"}>
-            <a href="" target={"_blank"} rel={"noreferrer"}>
+            <a href={require("../../assets/williams-resume.pdf")} target={"_blank"} rel={"noreferrer"}>
               <Button variant="primary" label="View Resume" />
             </a>
           </div>
