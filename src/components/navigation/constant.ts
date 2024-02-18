@@ -3,7 +3,7 @@ interface MenuListProps {
   label: string;
 }
 
-export const menuList: MenuListProps[] = [
+export const menuList: Array<MenuListProps> = [
   {
     path: "#about",
     label: "About",

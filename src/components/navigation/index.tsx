@@ -1,5 +1,10 @@
 import { FC, useState } from "react";
-import { FaceBook, Twitter, Linkendin, Instagram, GitHub, Hambugger } from "..";
+import { FaceBook } from "../icons/facebook";
+import { Twitter } from "../icons/twitter";
+import { Linkendin } from "../icons/linkendin";
+import { Instagram } from "../icons/instagram";
+import { GitHub } from "../icons/github";
+import { Hambugger } from "../icons/hambugger";
 import Logo from "../../static/images/logo.png";
 import { menuList } from "./constant";
 
