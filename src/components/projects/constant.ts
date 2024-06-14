@@ -28,7 +28,7 @@ export const ProjectsList: Array<Props> = [
     description:
       "TransferhubNG is an online platform designed to connect football players, coaches, agents accross teams different teams.",
     stacks: ["React", "Tailwind CSS", "Redux", "TypeScript"],
-    link: "https://transferng-gkjc9cfmg-williams247.vercel.app",
+    link: "https://transferng-site.netlify.app/",
   },
   {
     image: Organiser,
