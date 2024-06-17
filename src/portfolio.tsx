@@ -17,7 +17,7 @@ const PortFolio = () => {
   const [open, setOpen] = useState(false);
   const handleOpenClose = (): void => setOpen(!open);
   return (
-    <>
+    <main>
       <div className="bg-black py-6 w-full">
         <Container>
           <div className={"flex justify-center w-full"}>
@@ -26,16 +26,14 @@ const PortFolio = () => {
         </Container>
         <Hero />
       </div>
-      <div className="mt-3">
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
-        {open && <SideBar handleOpenClose={handleOpenClose} />}
-      </div>
-    </>
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Contact />
+      <Footer />
+      {open && <SideBar handleOpenClose={handleOpenClose} />}
+    </main>
   );
 };
 

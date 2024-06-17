@@ -3,15 +3,8 @@ import TransferNg from "../../static/images/transferng.png";
 import Organiser from "../../static/images/organiser.png";
 import CamClient from "../../static/images/cam_client.png";
 import Emmcoin from "../../static/images/emmcoin.png";
-import WhichRide from "../../static/images/which_ride.png"
-
-interface Props {
-  image: string;
-  name: string;
-  description: string;
-  stacks: Array<string>;
-  link: string;
-}
+import WhichRide from "../../static/images/which_ride.png";
+import { Props } from "./type";
 
 export const ProjectsList: Array<Props> = [
   {
@@ -64,7 +57,8 @@ export const ProjectsList: Array<Props> = [
   {
     image: WhichRide,
     name: "Which Ride",
-    description: "Which ride is a simple landing page that is built for transportation services",
+    description:
+      "Which ride is a simple landing page that is built for transportation services",
     stacks: ["React", "scss"],
     link: "https://which-ride-webpage.netlify.app",
   },

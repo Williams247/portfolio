@@ -9,7 +9,7 @@ export * from "./icons";
 export * from "./input";
 export * from "./contact";
 export * from "./navigation";
-export * from "./navigation/SideBar";
+export * from "./navigation/side-bar";
 export * from "./skills";
 export * from "./type-writter";
 export * from "./experience";

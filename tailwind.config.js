@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+      mono: ['Montserrat', 'sans-serif'],
+      'gotham-rounded': ['Gotham Rounded', 'sans-serif'],
+      'gotham-rounded-book':['Gotham Rounded Book', 'sans-serif'],
+      'gotham-rounded-light':['Gotham Rounded Light', 'sans-serif'],
+      'gotham-rounded-bold':['Gotham Rounded Bold', 'sans-serif']
+    },
     extend: {
       container: {
         center: true,

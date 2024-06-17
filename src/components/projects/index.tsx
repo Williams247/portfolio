@@ -16,7 +16,7 @@ export const Projects = () => (
           <div
             key={index}
             className={
-              "w-full sm:w-[48%] md:w-[30%] border border-primary-blue-100 rounded-lg mt-11"
+              "w-full sm:w-[48%] md:w-[32%] border border-primary-blue-100 rounded-lg mt-8"
             }
           >
             <img src={i.image} alt={i.name} className={"w-full rounded-t-lg"} />

@@ -3,7 +3,7 @@ import { Container } from "../container";
 import { experiences } from "./constant";
 
 export const Experience = () => (
-  <>
+  <section>
     <Container>
       <div id={"experience"} className={"mt-10"}>
         <Caption label="Experience" />
@@ -24,5 +24,5 @@ export const Experience = () => (
         </div>
       </div>
     </Container>
-  </>
+  </section>
 );

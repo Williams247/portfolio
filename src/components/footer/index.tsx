@@ -1,8 +1,8 @@
 import { Container } from "../container";
 import { Phone, Mail } from "../index";
 
-export const Footer = (): JSX.Element => (
-  <div id="footer" className="bg-primary-blue-100 py-5 mt-20">
+export const Footer = () => (
+  <footer id="footer" className="bg-primary-blue-100 py-5 mt-20">
     <Container>
       <div
         className={
@@ -28,5 +28,5 @@ export const Footer = (): JSX.Element => (
         </div>
       </div>
     </Container>
-  </div>
+  </footer>
 );

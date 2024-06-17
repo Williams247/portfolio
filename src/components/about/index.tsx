@@ -3,11 +3,10 @@ import { Container } from "../container";
 import { skills } from "../skills/constants";
 
 export const About = () => (
-  <div id="about">
+  <section id="about">
     <Container>
-      <div className={"pt-10"}>
+      <div>
         <Caption label="About me" />
-
         <div className={"mt-10"}>
           <p className={"text-white"}>
             I'm a Software engineer with over 4 and half years of working
@@ -24,5 +23,5 @@ export const About = () => (
         </div>
       </div>
     </Container>
-  </div>
+  </section>
 );
