@@ -6,6 +6,7 @@ import { NextIcon } from "./icons/next";
 import { NuxtIcon } from "./icons/nuxt";
 import { NodeIcon } from "./icons/node";
 import { MongoDBIcon } from "./icons/mongodb";
+import { PostgreSqlIcon } from "./icons/postgresql"
 import { TypeScriptIcon } from "./icons/typescript";
 import { Tailwind } from "./icons/tailwind";
 import { Bootstrap } from "./icons/bootstrap";
@@ -30,6 +31,7 @@ export const skills: Array<Props> = [
   { Icon: TypeScriptIcon, skill: "TypeScript", link: "https://www.typescriptlang.org/docs/" },
   { Icon: NuxtIcon, skill: "Nuxt Js", link: "https://nuxt.com/" },
   { Icon: NodeIcon, skill: "Node Js", link: "https://nodejs.org/docs/latest/api/" },
+  { Icon: PostgreSqlIcon, skill: "PostgreSQL", link: 'https://www.postgresql.org/docs/current/intro-whatis.html' },
   { Icon: MongoDBIcon, skill: "Mongo DB", link: "https://www.mongodb.com/" },
   { Icon: Tailwind, skill: "Tailwind", link: "https://tailwindcss.com/" },
   { Icon: Bootstrap, skill: "Bootstrap", link: "https://getbootstrap.com/" },
