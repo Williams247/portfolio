@@ -8,9 +8,13 @@ html {
 }
 
 body {
-  @apply p-0 m-0 bg-black font-gotham-rounded;
+  padding: 0;
+  margin: 0;
+  background: black;
+  font-family: 'Montserrat';
+  font-style: normal;
 }
 
 li {
-  @apply list-none;
+  list-style-type: none;
 }
