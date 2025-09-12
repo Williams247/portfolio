@@ -1,5 +1,4 @@
 import OneTray from "../../static/images/one_tray.png";
-import TransferNg from "../../static/images/transferng.png";
 import Organiser from "../../static/images/organiser.png";
 import CamClient from "../../static/images/cam_client.png";
 import Emmcoin from "../../static/images/emmcoin.png";
@@ -14,14 +13,6 @@ export const ProjectsList: Array<Props> = [
       "OneTray helps you crawl Pexels, Unsplash and Pixabay in one single page so you don't have to spend much time combining through free images.",
     stacks: ["React", "Material UI"],
     link: "https://scientific-approval.surge.sh",
-  },
-  {
-    image: TransferNg,
-    name: "Transferhub NG",
-    description:
-      "TransferhubNG is an online platform designed to connect football players, coaches, agents accross teams different teams.",
-    stacks: ["React", "Tailwind CSS", "Redux", "TypeScript"],
-    link: "https://transferng-site.netlify.app/",
   },
   {
     image: Organiser,
