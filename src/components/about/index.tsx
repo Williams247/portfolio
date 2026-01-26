@@ -9,7 +9,7 @@ export const About = () => (
         <Caption label="About me" />
         <div className={"mt-10"}>
           <p className={"text-white"}>
-            I'm a Software engineer with over 4 and half years of working
+            I'm a Software engineer with over 5 years of working
             experience. I derive joy in performing my duties with the
             technologies I've used throughout my working experience. I also love
             to learn new technologies and expand my knowledge as a software
