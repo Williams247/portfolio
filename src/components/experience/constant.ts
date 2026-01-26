@@ -18,7 +18,7 @@ export const experiences: Array<Props> = [
   },
   {
     company: "Intelligent Innovations Co",
-    timeframe: "Jul 2021 - Present",
+    timeframe: "Jul 2021 - 2026",
     description: [
       "Built the company's website using Next js.",
       "Built various email templates using vanilla Html and Css",
