@@ -28,7 +28,7 @@ export const Hero = () => (
           </p>
           <div className={"mt-14 md:mt-20 flex md:justify-center"}>
             <a
-              href={require("../../assets/williams-alex-resume.pdf")}
+              href={require("../../assets/williams-resume-doc.pdf")}
               target={"_blank"}
               rel={"noreferrer"}
             >
