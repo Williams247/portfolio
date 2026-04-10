@@ -26,14 +26,22 @@ export const TextArea = ({
   return (
     <div className="w-full">
       <label htmlFor={htmlFor} className={`block`}>
-        <span className={`${isRequired && "after:content-['*'] after:ml-0.5 block text-sm font-[500] leading-8 text-primary-blue-100"}`}>{label}</span>
+        <span
+          className={`${
+            isRequired
+              ? "block text-sm font-medium leading-8 text-primary-gray-100 after:ml-0.5 after:text-primary-blue-100 after:content-['*']"
+              : "text-sm text-primary-gray-200"
+          }`}
+        >
+          {label}
+        </span>
       </label>
       <textarea
         placeholder={placeHolder}
         value={inputValue}
         onChange={changeEvent}
         name={name}
-        className={"border-primary-blue-100 w-full ring-1 border block outline-none px-3 py-3 rounded-lg h-[150px]"}
+        className="block h-[150px] w-full rounded-xl border border-white/12 bg-slate-950/50 px-4 py-3 text-primary-gray-100 outline-none transition placeholder:text-primary-gray-200/45 focus:border-primary-blue-100/60 focus:ring-2 focus:ring-primary-blue-100/25"
       />
       {htmlFor && (
         <p className="text-sm text-[red] mt-3">

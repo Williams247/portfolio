@@ -2,7 +2,7 @@ export const VueIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 48 48"
-    className={"w-[5rem] h-[5rem] mt-4"}
+    className="block h-full w-full"
   >
     <polygon
       fill="#81c784"

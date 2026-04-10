@@ -38,7 +38,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div id={"message"} className={"mt-14 py-6 md:px-5 lg:px-8"}>
+    <div id="message">
       <div>
         <div>
           <form onSubmit={formik.handleSubmit}>
@@ -59,7 +59,7 @@ export const ContactForm = () => {
               </div>
               <div>
                 <TextInput
-                  label={"From Who"}
+                  label="Name"
                   isRequired
                   htmlFor={"from"}
                   name={"from"}
@@ -68,7 +68,7 @@ export const ContactForm = () => {
                   errors={formik.errors}
                   touched={formik.touched}
                   inputValue={formik.values.from}
-                  placeHolder={"From who"}
+                  placeHolder="Your name"
                 />
               </div>
             </div>

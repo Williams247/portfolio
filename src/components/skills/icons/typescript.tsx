@@ -1,7 +1,7 @@
 export const TypeScriptIcon = () => (
   <svg
     fill="#558bff"
-    className={"w-[4.5rem] h-[4.5rem] mt-6"}
+    className="block h-full w-full"
     viewBox="0 0 24 24"
     role="img"
     xmlns="http://www.w3.org/2000/svg"

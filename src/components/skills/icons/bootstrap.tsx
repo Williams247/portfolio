@@ -2,7 +2,7 @@ export const Bootstrap = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 48 48"
-    className={"w-[6rem] h-[6rem] mt-2"}
+    className="block h-full w-full"
     baseProfile="basic"
   >
     <linearGradient

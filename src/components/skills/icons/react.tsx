@@ -2,7 +2,7 @@ export const ReactIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
-    className={"w-[6rem] h-[6rem] mt-3"}
+    className="block h-full w-full"
   >
     <circle cx="50" cy="50" r="7" fill="#39c1d7" />
     <path

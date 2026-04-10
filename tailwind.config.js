@@ -14,6 +14,9 @@ module.exports = {
         center: true,
         padding: "4rem",
       },
+      fontFamily: {
+        sans: ["Montserrat", "system-ui", "sans-serif"],
+      },
       colors: {
         primary: {
           blue: {
@@ -26,7 +29,33 @@ module.exports = {
             200: '#8892b0',
           }
         }
-      }
+      },
+      boxShadow: {
+        glow: "0 0 50px -12px rgba(85, 139, 255, 0.45)",
+        "glow-sm": "0 0 30px -8px rgba(85, 139, 255, 0.35)",
+        card: "0 25px 50px -15px rgba(0, 0, 0, 0.55)",
+      },
+      backgroundImage: {
+        "hero-grid":
+          "linear-gradient(rgba(85, 139, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(85, 139, 255, 0.05) 1px, transparent 1px)",
+      },
+      backgroundSize: {
+        grid: "64px 64px",
+      },
+      animation: {
+        "fade-up": "fadeUp 0.7s ease-out forwards",
+        float: "float 8s ease-in-out infinite",
+      },
+      keyframes: {
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(16px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(8px, -12px)" },
+        },
+      },
     },
   },
   plugins: [],

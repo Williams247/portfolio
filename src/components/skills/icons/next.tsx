@@ -1,6 +1,6 @@
 export const NextIcon = () => (
   <svg
-    className={"w-[5rem] h-[5rem] mt-5"}
+    className="block h-full w-full"
     viewBox="0 0 256 256"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"

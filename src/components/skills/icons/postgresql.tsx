@@ -1,10 +1,8 @@
 export const PostgreSqlIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="85"
     viewBox="0 0 25.6 25.6"
-    width="85"
-    style={{ marginTop: "1rem" }}
+    className="block h-full w-full"
   >
     <style>
       {`

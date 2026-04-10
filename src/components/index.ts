@@ -14,3 +14,4 @@ export * from "./skills";
 export * from "./type-writter";
 export * from "./experience";
 export * from "./projects";
+export * from "./scroll-reveal";

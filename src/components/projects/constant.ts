@@ -1,49 +1,43 @@
-import OneTray from "../../static/images/one_tray.png";
-import Organiser from "../../static/images/organiser.png";
 import CamClient from "../../static/images/cam_client.png";
-import Emmcoin from "../../static/images/emmcoin.png";
+import Giftara from "../../static/images/giftara.jpg";
+import HokfamShop from "../../static/images/hokfam_shop.jpg";
+import IntelligentInnovations from "../../static/images/intelligent_innovations.jpg";
+import SkillPaddy from "../../static/images/skillpaddy.jpg";
 import WhichRide from "../../static/images/which_ride.png";
 import { Props } from "./type";
 
 export const ProjectsList: Array<Props> = [
   {
-    image: OneTray,
-    name: "One Tray",
+    image: Giftara,
+    name: "Giftara",
     description:
-      "OneTray helps you crawl Pexels, Unsplash and Pixabay in one single page so you don't have to spend much time combining through free images.",
-    stacks: ["React", "Material UI"],
-    link: "https://scientific-approval.surge.sh",
+      "Buy and send digital e-gift cards for birthdays, celebrations, shopping, travel, and more—with instant delivery to email, wallet, or profile, plus an Android app for on-the-go gifting.",
+    stacks: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React Native", "Laravel"],
+    link: "https://giftara.app/",
   },
   {
-    image: Organiser,
-    name: "Organiser",
+    image: IntelligentInnovations,
+    name: "Intelligent Innovations",
     description:
-      "Organiser is an app that helps you plan your activities, you can look at it as an event planner for your activities",
-    stacks: [
-      "Next.Js",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "Mongo DB",
-      "TypeScript",
-    ],
-    link: "https://organiser-v2-frontend.vercel.app/",
+      "Company website for Intelligent Innovations—showcasing enterprise technology solutions, product portfolio, and client work for partners across banking, telecom, FMCG, and government.",
+    stacks: ["Next.js", "Tailwind CSS", "TypeScript"],
+    link: "https://www.intelligentinnovations.co",
   },
   {
-    image: CamClient,
-    name: "Cam Client",
+    image: SkillPaddy,
+    name: "SkillPaddy",
     description:
-      "Cam Client is a web based application for taking passport photographs, it open source it can be used in a verification or registration scenario",
-    stacks: ["React"],
-    link: "https://cam-client.netlify.app/",
+      "Online learning platform for learners, tutors, and businesses—browse short courses and intensive programs across tech and soft skills, with enrollment, community, and pathways from learning to earning.",
+    stacks: ["Next.js", "Tailwind CSS", "TypeScript", "NestJS", "PostgreSQL"],
+    link: "https://skillpaddy.com",
   },
   {
-    image: Emmcoin,
-    name: "Emmcoin",
+    image: HokfamShop,
+    name: "Hokfam Shop",
     description:
-      "Emmcoin helps with various forms of online transactions, ranging from money transfers, airtime/data topup, crypto currencies etc",
-    stacks: ["Next.JS", "TypeScript"],
-    link: "https://www.emmcoin.com",
+      "E-commerce storefront for Hokfam—a modern clothing brand with curated collections, categories, new arrivals, promos, and a shopping experience built for comfort, style, and checkout.",
+    stacks: ["Tailwind CSS", "Next.js", "NestJS", "MongoDB", "PHP"],
+    link: "https://shop.hokfam.com",
   },
   {
     image: WhichRide,
@@ -52,5 +46,13 @@ export const ProjectsList: Array<Props> = [
       "Which ride is a simple landing page that is built for transportation services",
     stacks: ["React", "scss"],
     link: "https://which-ride-webpage.netlify.app",
+  },
+  {
+    image: CamClient,
+    name: "Cam Client",
+    description:
+      "Cam Client is a web based application for taking passport photographs, it open source it can be used in a verification or registration scenario",
+    stacks: ["React"],
+    link: "https://cam-client.netlify.app/",
   },
 ];

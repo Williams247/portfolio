@@ -1,7 +1,7 @@
 import Typewriter from "typewriter-effect";
 
 export const TypeWritter = () => (
-  <section>
+  <div className="inline-block min-h-[1.5em]">
     <Typewriter
       options={{
         strings: [
@@ -14,5 +14,5 @@ export const TypeWritter = () => (
         loop: true,
       }}
     />
-  </section>
+  </div>
 );

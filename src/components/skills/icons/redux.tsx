@@ -1,6 +1,6 @@
 export const ReduxIcon = () => (
   <svg
-    className={"w-[5rem] h-[5rem] md:mt-4"}
+    className="block h-full w-full"
     viewBox="0 0 256 244"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"

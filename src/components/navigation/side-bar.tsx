@@ -1,10 +1,7 @@
 import { FC } from "react";
 import { menuList } from "./constant";
 import Logo from "../../static/images/logo.png";
-import { FaceBook } from "../icons/facebook";
-import { Twitter } from "../icons/twitter";
 import { Linkendin } from "../icons/linkendin";
-import { Instagram } from "../icons/instagram";
 import { GitHub } from "../icons/github";
 
 interface Props {
@@ -13,65 +10,77 @@ interface Props {
 
 export const SideBar: FC<Props> = ({ handleOpenClose }) => (
   <div
-    className={
-      "bg-[rgba(0,0,0,0.4)] block sm:block md:block lg:hidden xl:hidden w-full fixed bottom-0 right-0 left-0 z-20 h-full"
-    }
+    className="fixed inset-0 z-50 flex h-full w-full lg:hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Mobile menu"
   >
-    <div className={"bg-white w-[350px] h-full px-10 py-5"}>
-      <div>
-        <button className="text-[50px] float-right" onClick={handleOpenClose}>
+    <aside
+      className="flex h-full min-h-0 w-[min(100vw,20rem)] shrink-0 flex-col border-r border-slate-200/80 bg-white px-8 py-5 text-slate-900 shadow-2xl subpixel-antialiased"
+    >
+      <div className="flex shrink-0 justify-end">
+        <button
+          type="button"
+          className="-mr-1 rounded-lg p-2 text-3xl leading-none text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900"
+          onClick={handleOpenClose}
+          aria-label="Close menu"
+        >
           &times;
         </button>
       </div>
-      <div className="mt-24">
-        <a href="#home" onClick={handleOpenClose}>
-          <img src={Logo} alt="Portfolio sign" width={50} />
+      <div className="mt-16 flex min-h-0 flex-1 flex-col">
+        <a href="#home" onClick={handleOpenClose} className="inline-block w-fit">
+          <img
+            src={Logo}
+            alt="Portfolio sign"
+            width={50}
+            height={50}
+            className="h-[50px] w-[50px] rounded-lg object-cover shadow-sm"
+          />
         </a>
-      </div>
-      <div className={"mt-5"}>
-        <div className={"flex gap-2"}>
-          <button className="px-1 active:scale-90">
-            <a href={"https://github.com/Williams247"}>
+        <div className="mt-6 flex flex-col gap-6">
+          <div className="flex gap-1 text-slate-800">
+            <a
+              href="https://github.com/Williams247"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+              className="rounded-lg p-2 transition-colors hover:bg-slate-100 hover:text-primary-blue-100"
+            >
               <GitHub />
             </a>
-          </button>
-          <button className="px-1 active:scale-90">
-            <a href={"https://web.facebook.com/williams.godswill.39/"}>
-              <FaceBook />
-            </a>
-          </button>
-          <button className="px-1 active:scale-90">
-            <a href={"https://twitter.com/William33199979"}>
-              <Twitter />
-            </a>
-          </button>
-          <button className="px-1 active:scale-90">
-            <a href={"https://www.linkedin.com/in/williams-alex-17b3201a3/"}>
+            <a
+              href="https://www.linkedin.com/in/williams-alex-17b3201a3/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              className="rounded-lg p-2 transition-colors hover:bg-slate-100 hover:text-primary-blue-100"
+            >
               <Linkendin />
             </a>
-          </button>
-          <button className="px-1 active:scale-90">
-            <a href={"https://www.instagram.com/williamsgilfoil/"}>
-              <Instagram />
-            </a>
-          </button>
+          </div>
+          <nav aria-label="Mobile">
+            <ul className="flex flex-col gap-1">
+              {menuList.map((data, index) => (
+                <li key={index}>
+                  <a
+                    href={data.path}
+                    onClick={handleOpenClose}
+                    className="block rounded-lg py-2.5 text-base font-medium text-slate-800 transition-colors hover:bg-slate-100 hover:text-primary-blue-100"
+                  >
+                    {data.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
-        <ul>
-          {menuList.map((data, index) => {
-            return (
-              <li
-                className="mt-5 active:scale-90"
-                key={index}
-                onClick={handleOpenClose}
-              >
-                <a href={data.path} className="text-sm font-[500]">
-                  {data.label}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
       </div>
-    </div>
+    </aside>
+    <div
+      className="min-h-full min-w-0 flex-1 bg-black/40"
+      onClick={handleOpenClose}
+      role="presentation"
+    />
   </div>
 );
