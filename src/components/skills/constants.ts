@@ -17,6 +17,7 @@ import { MongoDBIcon } from "./icons/mongodb";
 import { PostgreSqlIcon } from "./icons/postgresql";
 import { RedisIcon } from "./icons/redis";
 import { RabbitMqIcon } from "./icons/rabbitmq";
+import { NetlifyIcon } from "./icons/netlify";
 import { RenderIcon } from "./icons/render";
 import { VercelIcon } from "./icons/vercel";
 import { DigitalOceanIcon } from "./icons/digitalocean";
@@ -74,6 +75,7 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Cloud & infrastructure",
     items: [
+      { name: "Netlify", link: "https://www.netlify.com/", Icon: NetlifyIcon },
       { name: "Render", link: "https://render.com/", Icon: RenderIcon },
       { name: "Vercel", link: "https://vercel.com/", Icon: VercelIcon },
       { name: "Digital Ocean", link: "https://www.digitalocean.com/", Icon: DigitalOceanIcon },
