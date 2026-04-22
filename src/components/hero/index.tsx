@@ -18,7 +18,7 @@ export const Hero = () => (
     <Container>
       <div className="relative z-10 flex justify-center">
         <div className="max-w-3xl text-center md:max-w-4xl">
-          <div className="animate-fade-up text-base md:text-lg text-primary-gray-100/95">
+          <div className="text-base md:text-lg text-primary-gray-100/95">
             <TypeWritter />
           </div>
           <p className="font-gotham-rounded-bold mt-8 text-4xl leading-tight text-white md:mt-10 md:text-6xl md:leading-[1.1]">

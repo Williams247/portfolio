@@ -11,7 +11,6 @@ import {
   SideBar,
   Experience,
   Projects,
-  ScrollReveal,
 } from "./components";
 
 const PortFolio = () => {
@@ -28,25 +27,13 @@ const PortFolio = () => {
         <Hero />
       </div>
       <div className="relative">
-        <ScrollReveal>
-          <About />
-        </ScrollReveal>
-        <ScrollReveal>
-          <Skills />
-        </ScrollReveal>
-        <ScrollReveal>
-          <Experience />
-        </ScrollReveal>
-        <ScrollReveal>
-          <Projects />
-        </ScrollReveal>
-        <ScrollReveal>
-          <Contact />
-        </ScrollReveal>
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Contact />
       </div>
-      <ScrollReveal>
-        <Footer />
-      </ScrollReveal>
+      <Footer />
       {open && <SideBar handleOpenClose={handleOpenClose} />}
     </main>
   );

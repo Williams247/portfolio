@@ -35,7 +35,7 @@ function ProjectImageLightbox({
       onClick={onClose}
       role="presentation"
     >
-      <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-[14px]" aria-hidden />
+      <div className="absolute inset-0 bg-slate-950/85" aria-hidden />
       <div
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_50%_35%,rgba(85,139,255,0.14),transparent_62%)]"
         aria-hidden
@@ -46,7 +46,7 @@ function ProjectImageLightbox({
       />
 
       <div
-        className="animate-fade-up relative flex max-h-[min(93vh,980px)] w-full max-w-[min(96vw,1220px)] flex-col overflow-hidden rounded-3xl border border-white/[0.12] bg-gradient-to-b from-slate-900/98 via-slate-950/99 to-[#030712] shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_40px_100px_-24px_rgba(0,0,0,0.85),0_0_80px_-20px_rgba(85,139,255,0.18)] ring-1 ring-white/[0.08]"
+        className="relative flex max-h-[min(93vh,980px)] w-full max-w-[min(96vw,1220px)] flex-col overflow-hidden rounded-3xl border border-white/[0.12] bg-gradient-to-b from-slate-900/98 via-slate-950/99 to-[#030712] shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_28px_64px_-24px_rgba(0,0,0,0.8)] ring-1 ring-white/[0.08]"
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
@@ -73,7 +73,7 @@ function ProjectImageLightbox({
           <button
             type="button"
             onClick={onClose}
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/[0.12] bg-white/[0.06] text-xl leading-none text-slate-200 shadow-lg shadow-black/20 backdrop-blur-sm transition hover:border-primary-blue-100/35 hover:bg-primary-blue-100/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue-100/45"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/[0.12] bg-white/[0.06] text-xl leading-none text-slate-200 shadow-lg shadow-black/20 transition hover:border-primary-blue-100/35 hover:bg-primary-blue-100/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue-100/45"
             aria-label="Close preview"
           >
             ×
@@ -82,27 +82,25 @@ function ProjectImageLightbox({
 
         <div className="min-h-0 flex-1 overflow-auto bg-[radial-gradient(ellipse_90%_70%_at_50%_-10%,rgba(85,139,255,0.09),transparent_50%)] px-4 py-5 md:px-7 md:py-6">
           <div className="relative mx-auto max-w-full">
-            <div
-              className="pointer-events-none absolute -inset-3 rounded-[1.35rem] bg-gradient-to-br from-primary-blue-100/15 via-transparent to-sky-400/10 opacity-60 blur-xl"
-              aria-hidden
-            />
             <div className="relative rounded-2xl border border-white/[0.1] bg-slate-950/80 p-2 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06),0_24px_48px_-12px_rgba(0,0,0,0.65)] ring-1 ring-white/[0.06] md:p-2.5">
               <div className="overflow-hidden rounded-xl bg-slate-950/90 ring-1 ring-black/40">
                 <img
                   src={src}
                   alt={`${name} full preview`}
                   className="mx-auto max-h-[min(76vh,840px)] w-auto max-w-full object-contain object-top drop-shadow-[0_28px_56px_rgba(0,0,0,0.5)]"
+                  loading="eager"
+                  decoding="async"
                 />
               </div>
             </div>
           </div>
 
           <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 text-[11px] font-medium text-slate-400 backdrop-blur-sm">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 text-[11px] font-medium text-slate-400">
               <kbd className="rounded border border-white/10 bg-slate-900/80 px-1.5 py-0.5 font-mono text-[10px] text-slate-300">Esc</kbd>
               to close
             </span>
-            <span className="inline-flex items-center rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 text-[11px] font-medium text-slate-400 backdrop-blur-sm">
+            <span className="inline-flex items-center rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 text-[11px] font-medium text-slate-400">
               Click backdrop to close
             </span>
           </div>
@@ -131,10 +129,6 @@ export const Projects = () => {
         className="pointer-events-none absolute left-1/2 top-[18%] h-[min(400px,48vh)] w-[min(760px,110vw)] -translate-x-1/2 bg-[radial-gradient(ellipse_58%_48%_at_50%_45%,rgba(85,139,255,0.11),transparent_72%)]"
         aria-hidden
       />
-      <div
-        className="pointer-events-none absolute -right-20 bottom-[15%] h-56 w-56 rounded-full bg-sky-400/8 blur-3xl"
-        aria-hidden
-      />
       <Container>
         <div className="relative z-10 mx-auto w-full max-w-5xl text-left">
           <Caption label="Projects" />
@@ -142,7 +136,7 @@ export const Projects = () => {
             {ProjectsList.map((i, index) => (
               <article
                 key={index}
-                className="group/card relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/[0.08] bg-gradient-to-b from-slate-900/50 via-slate-950/70 to-[#050816] shadow-[0_28px_56px_-24px_rgba(0,0,0,0.72)] ring-1 ring-inset ring-white/[0.04] transition-[transform,box-shadow,border-color,ring-color] duration-300 hover:-translate-y-1.5 hover:border-primary-blue-100/22 hover:shadow-[0_36px_72px_-28px_rgba(85,139,255,0.14),0_28px_56px_-24px_rgba(0,0,0,0.75)] hover:ring-primary-blue-100/10"
+                className="group/card relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/[0.08] bg-gradient-to-b from-slate-900/50 via-slate-950/70 to-[#050816] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.72)] ring-1 ring-inset ring-white/[0.04]"
               >
                 <div className="border-b border-white/[0.06] bg-slate-950/90">
                   <div className="flex items-center gap-2 px-4 py-2.5">
@@ -159,15 +153,15 @@ export const Projects = () => {
                     <button
                       type="button"
                       onClick={() => setLightbox({ src: i.image, name: i.name })}
-                      className="group/img relative block w-full cursor-zoom-in overflow-hidden rounded-xl bg-slate-950/50 text-left ring-1 ring-white/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] transition hover:ring-primary-blue-100/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue-100/50"
+                      className="group/img relative block w-full cursor-zoom-in overflow-hidden rounded-xl bg-slate-950/50 text-left ring-1 ring-white/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue-100/50"
                       aria-label={`Open ${i.name} screenshot full screen`}
                     >
                       <div
-                        className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-[#050816]/55 via-transparent to-slate-950/20 transition group-hover/img:from-[#050816]/35"
+                        className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-[#050816]/45 via-transparent to-slate-950/20"
                         aria-hidden
                       />
                       <span
-                        className="pointer-events-none absolute bottom-2 right-2 z-20 rounded-md border border-white/10 bg-black/45 px-2 py-0.5 text-[10px] font-medium text-white/90 opacity-0 backdrop-blur-sm transition group-hover/img:opacity-100"
+                        className="pointer-events-none absolute bottom-2 right-2 z-20 rounded-md border border-white/10 bg-black/45 px-2 py-0.5 text-[10px] font-medium text-white/90"
                         aria-hidden
                       >
                         Enlarge
@@ -175,7 +169,9 @@ export const Projects = () => {
                       <img
                         src={i.image}
                         alt={`${i.name} preview`}
-                        className="aspect-[16/10] w-full object-cover object-top transition duration-500 group-hover/card:scale-[1.02]"
+                        className="aspect-[16/10] w-full object-cover object-top"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </button>
                   </div>
@@ -199,7 +195,7 @@ export const Projects = () => {
                       {i.stacks.map((stack, stackIndex) => (
                         <span
                           key={stackIndex}
-                          className="inline-flex rounded-lg border border-white/[0.07] bg-white/[0.04] px-2.5 py-1 text-[11px] font-medium text-slate-200/95 shadow-sm shadow-black/25 backdrop-blur-sm transition-colors duration-200 group-hover/card:border-white/[0.12] group-hover/card:bg-white/[0.06]"
+                          className="inline-flex rounded-lg border border-white/[0.07] bg-white/[0.04] px-2.5 py-1 text-[11px] font-medium text-slate-200/95 shadow-sm shadow-black/25"
                         >
                           {stack}
                         </span>
@@ -212,11 +208,11 @@ export const Projects = () => {
                       href={i.link}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary-blue-100 via-primary-blue-100 to-sky-500 py-3 text-center text-sm font-bold text-white shadow-lg shadow-primary-blue-100/25 transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_-8px_rgba(85,139,255,0.55)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue-100/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#050816] active:translate-y-0"
+                      className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary-blue-100 via-primary-blue-100 to-sky-500 py-3 text-center text-sm font-bold text-white shadow-lg shadow-primary-blue-100/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue-100/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[#050816]"
                     >
                       View project
                       <span
-                        className="text-base leading-none opacity-95 transition group-hover/card:translate-x-0.5 group-hover/card:-translate-y-0.5"
+                        className="text-base leading-none opacity-95"
                         aria-hidden
                       >
                         ↗
