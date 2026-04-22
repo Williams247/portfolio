@@ -2,7 +2,7 @@
 
 Personal portfolio website for Williams Alex, a Full-Stack Software Engineer focused on building, maintaining, and scaling web and mobile applications.
 
-Live site: [https://williams-alex-portfolio.netlify.app/](https://williams-alex-portfolio.netlify.app/)
+Live site: [https://williams-alex-portfolio-website.netlify.app/](https://williams-alex-portfolio-website.netlify.app/)
 
 ## About Me
 
