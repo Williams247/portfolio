@@ -130,9 +130,9 @@ export const Projects = () => {
         aria-hidden
       />
       <Container>
-        <div className="relative z-10 mx-auto w-full max-w-5xl text-left">
+        <div className="relative z-10 mx-auto w-full max-w-6xl text-left">
           <Caption label="Projects" />
-          <div className="mt-12 grid w-full grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-9 xl:grid-cols-3 xl:gap-9">
+          <div className="mt-12 grid w-full grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-9">
             {ProjectsList.map((i, index) => (
               <article
                 key={index}

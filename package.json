@@ -64,7 +64,6 @@
     "svgo": "2.8.3",
     "tar": "7.5.22",
     "tough-cookie": "4.1.4",
-    "uuid": "11.1.1",
-    "webpack-dev-server": "5.2.6"
+    "uuid": "11.1.1"
   }
 }
