@@ -18,7 +18,7 @@ export const Hero = () => (
     <Container>
       <div className="relative z-10 flex justify-center">
         <div className="max-w-3xl text-center md:max-w-4xl">
-          <div className="text-base md:text-lg text-primary-gray-100/95">
+          <div className="mx-auto w-full max-w-full text-base md:text-lg text-primary-gray-100/95">
             <TypeWritter />
           </div>
           <p className="font-gotham-rounded-bold mt-8 text-4xl leading-tight text-white md:mt-10 md:text-6xl md:leading-[1.1]">
@@ -27,9 +27,12 @@ export const Hero = () => (
               Williams Alex!
             </span>
           </p>
-          <p className="mx-auto mt-6 max-w-[52ch] text-lg leading-relaxed text-primary-gray-200 md:text-xl">
-            I’m a software engineer that specialize in building websites and web applications. I love to
-            achieve my goals.
+          <p className="mt-5 max-w-full text-balance text-sm font-semibold tracking-wide text-primary-blue-100 sm:text-base md:text-lg">
+            Software Engineer | Frontend • Backend • Full-Stack
+          </p>
+          <p className="mx-auto mt-6 max-w-[58ch] text-lg leading-relaxed text-primary-gray-200 md:text-xl">
+            I build high-performance web and mobile applications—connecting polished interfaces smoothly
+            with asynchronous backend systems and deploying them to scalable cloud infrastructure.
           </p>
           <div className="mt-12 flex justify-center md:mt-14">
             <Button

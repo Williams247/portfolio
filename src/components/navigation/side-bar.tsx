@@ -16,7 +16,7 @@ export const SideBar: FC<Props> = ({ handleOpenClose }) => (
     aria-label="Mobile menu"
   >
     <aside
-      className="flex h-full min-h-0 w-[min(100vw,20rem)] shrink-0 flex-col border-r border-slate-200/80 bg-white px-8 py-5 text-slate-900 shadow-2xl subpixel-antialiased"
+      className="flex h-full min-h-0 w-80 max-w-[85vw] shrink-0 flex-col border-r border-slate-200/80 bg-white px-8 py-5 text-slate-900 shadow-2xl subpixel-antialiased"
     >
       <div className="flex shrink-0 justify-end">
         <button

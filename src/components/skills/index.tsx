@@ -24,7 +24,13 @@ export const Skills = () => (
                       className="group flex items-center justify-center rounded-2xl border border-white/[0.07] bg-white/[0.02] p-3 transition-[border-color,background-color] duration-200 hover:border-primary-blue-100/25 hover:bg-white/[0.05] md:p-4"
                     >
                       <span className="flex h-14 w-14 shrink-0 items-center justify-center [&_svg]:m-0 [&_svg]:block [&_svg]:h-full [&_svg]:w-full [&_svg]:max-h-full [&_svg]:max-w-full [&_svg]:[shape-rendering:geometricPrecision]">
-                        <Icon />
+                        {Icon ? (
+                          <Icon />
+                        ) : (
+                          <span className="px-1.5 text-center text-[10px] font-semibold leading-snug text-primary-gray-100">
+                            {name}
+                          </span>
+                        )}
                       </span>
                     </a>
                   </div>

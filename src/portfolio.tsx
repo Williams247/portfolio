@@ -17,7 +17,7 @@ const PortFolio = () => {
   const [open, setOpen] = useState(false);
   const handleOpenClose = (): void => setOpen(!open);
   return (
-    <main className="min-h-screen text-primary-gray-100 antialiased selection:bg-primary-blue-100/25 selection:text-white">
+    <main className="min-h-screen overflow-x-hidden text-primary-gray-100 antialiased selection:bg-primary-blue-100/25 selection:text-white">
       <div className="relative overflow-hidden py-6 w-full">
         <Container>
           <div className="flex justify-center w-full">

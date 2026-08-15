@@ -126,7 +126,7 @@ export const Projects = () => {
   return (
     <section className="relative overflow-hidden pb-20 pt-8 md:pb-28">
       <div
-        className="pointer-events-none absolute left-1/2 top-[18%] h-[min(400px,48vh)] w-[min(760px,110vw)] -translate-x-1/2 bg-[radial-gradient(ellipse_58%_48%_at_50%_45%,rgba(85,139,255,0.11),transparent_72%)]"
+        className="pointer-events-none absolute left-1/2 top-[18%] h-[min(400px,48vh)] w-[min(760px,100%)] -translate-x-1/2 bg-[radial-gradient(ellipse_58%_48%_at_50%_45%,rgba(85,139,255,0.11),transparent_72%)]"
         aria-hidden
       />
       <Container>
@@ -178,10 +178,13 @@ export const Projects = () => {
                 </div>
 
                 <div className="relative flex flex-1 flex-col bg-[radial-gradient(ellipse_90%_60%_at_50%_-20%,rgba(85,139,255,0.07),transparent_55%)] px-5 pb-6 pt-5 md:px-6 md:pb-7 md:pt-6">
-                  <div className="mb-1 flex items-center gap-2">
+                  <div className="mb-1 flex flex-wrap items-center gap-2">
                     <span className="h-px w-6 bg-gradient-to-r from-primary-blue-100/60 to-transparent" aria-hidden />
                     <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary-blue-100/70">
                       Project
+                    </span>
+                    <span className="inline-flex rounded-full border border-primary-blue-100/30 bg-primary-blue-100/[0.08] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-primary-blue-100">
+                      {i.scope}
                     </span>
                   </div>
                   <h3 className="text-lg font-semibold tracking-tight text-white md:text-xl">{i.name}</h3>

@@ -4,4 +4,5 @@ export interface Props {
   description: string;
   stacks: Array<string>;
   link: string;
+  scope: string;
 }

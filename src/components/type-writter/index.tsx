@@ -1,14 +1,14 @@
 import Typewriter from "typewriter-effect";
 
 export const TypeWritter = () => (
-  <div className="inline-block min-h-[1.5em]">
+  <div className="mx-auto w-full max-w-full min-h-[1.5em] break-words [&_.Typewriter__wrapper]:inline">
     <Typewriter
       options={{
         strings: [
-          "I'm a software engineer.",
-          "I build websites and web apps.",
-          "It will be nice to join your team.",
-          "You can send a mail to williamsalexjr@gmail.com",
+          "Software Engineer | Frontend • Backend • Full-Stack",
+          "I build high-performance web and mobile applications.",
+          "I connect UIs to asynchronous backend systems.",
+          "I deploy products to scalable cloud infrastructure.",
         ],
         autoStart: true,
         loop: true,
