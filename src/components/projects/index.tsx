@@ -4,6 +4,26 @@ import { ProjectsList } from "./constant";
 import { Caption } from "../caption";
 import { Container } from "../container";
 
+function MaximizeIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-6 w-6 text-white"
+      aria-hidden
+    >
+      <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+      <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+      <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+      <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+    </svg>
+  );
+}
+
 function previewHost(link: string): string {
   try {
     return new URL(link).hostname.replace(/^www\./, "");
@@ -156,27 +176,25 @@ export const Projects = () => {
                     <button
                       type="button"
                       onClick={() => setLightbox({ src: i.image, name: i.name })}
-                      className="group/img relative block w-full cursor-zoom-in overflow-hidden bg-slate-950/50 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue-100/50"
+                      className="group relative block w-full cursor-zoom-in overflow-hidden bg-slate-950/50 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue-100/50"
                       aria-label={`Open ${i.name} screenshot full screen`}
                     >
-                      <div
-                        className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-[#050816]/45 via-transparent to-slate-950/20"
-                        aria-hidden
-                      />
-                      <span
-                        className="pointer-events-none absolute bottom-2 right-2 z-20 rounded-md border border-white/10 bg-black/45 px-2 py-0.5 text-[10px] font-medium text-white/90"
-                        aria-hidden
-                      >
-                        Enlarge
-                      </span>
-                      <div className="aspect-[16/10] overflow-hidden bg-slate-950/50">
+                      <div className="relative aspect-[16/10] overflow-hidden bg-slate-950/50">
                         <img
                           src={i.image}
                           alt={`${i.name} preview`}
-                          className="w-full h-auto object-top"
+                          className="w-full h-auto object-top transition-transform duration-300 group-hover:scale-[1.03]"
                           loading="lazy"
                           decoding="async"
                         />
+                        <div
+                          className="absolute inset-0 z-10 flex items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100"
+                          aria-hidden
+                        >
+                          <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-white/10 shadow-lg backdrop-blur-sm">
+                            <MaximizeIcon />
+                          </span>
+                        </div>
                       </div>
                     </button>
                   </div>
