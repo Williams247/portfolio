@@ -1,8 +1,8 @@
 import CamClient from "../../static/images/cam_client.png";
-import Giftara from "../../static/images/giftara.jpg";
-import HokfamShop from "../../static/images/hokfam_shop.jpg";
-import IntelligentInnovations from "../../static/images/intelligent_innovations.jpg";
-import SkillPaddy from "../../static/images/skillpaddy.jpg";
+import Giftara from "../../static/images/giftara.png";
+import HokfamShop from "../../static/images/hokfam_shop.png";
+import IntelligentInnovations from "../../static/images/intelligent_innovations.png";
+import SkillPaddy from "../../static/images/skillpaddy.png";
 import WhichRide from "../../static/images/which_ride.png";
 import { Props } from "./type";
 

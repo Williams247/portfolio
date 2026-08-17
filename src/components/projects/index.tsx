@@ -46,7 +46,7 @@ function ProjectImageLightbox({
       />
 
       <div
-        className="relative flex max-h-[min(93vh,980px)] w-full max-w-[min(96vw,1220px)] flex-col overflow-hidden rounded-3xl border border-white/[0.12] bg-gradient-to-b from-slate-900/98 via-slate-950/99 to-[#030712] shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_28px_64px_-24px_rgba(0,0,0,0.8)] ring-1 ring-white/[0.08]"
+        className="relative flex max-h-[min(93vh,980px)] w-full max-w-[min(94vw,1080px)] flex-col overflow-hidden rounded-3xl border border-white/[0.12] bg-gradient-to-b from-slate-900/98 via-slate-950/99 to-[#030712] shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_28px_64px_-24px_rgba(0,0,0,0.8)] ring-1 ring-white/[0.08]"
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
@@ -83,11 +83,11 @@ function ProjectImageLightbox({
         <div className="min-h-0 flex-1 overflow-auto bg-[radial-gradient(ellipse_90%_70%_at_50%_-10%,rgba(85,139,255,0.09),transparent_50%)] px-4 py-5 md:px-7 md:py-6">
           <div className="relative mx-auto max-w-full">
             <div className="relative rounded-2xl border border-white/[0.1] bg-slate-950/80 p-2 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06),0_24px_48px_-12px_rgba(0,0,0,0.65)] ring-1 ring-white/[0.06] md:p-2.5">
-              <div className="overflow-hidden rounded-xl bg-slate-950/90 ring-1 ring-black/40">
+              <div className="rounded-xl bg-slate-950/90 ring-1 ring-black/40">
                 <img
                   src={src}
                   alt={`${name} full preview`}
-                  className="mx-auto max-h-[min(76vh,840px)] w-auto max-w-full object-contain object-top drop-shadow-[0_28px_56px_rgba(0,0,0,0.5)]"
+                  className="block w-full h-auto max-w-full object-top drop-shadow-[0_28px_56px_rgba(0,0,0,0.5)]"
                   loading="eager"
                   decoding="async"
                 />
@@ -99,6 +99,9 @@ function ProjectImageLightbox({
             <span className="inline-flex items-center gap-1.5 rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 text-[11px] font-medium text-slate-400">
               <kbd className="rounded border border-white/10 bg-slate-900/80 px-1.5 py-0.5 font-mono text-[10px] text-slate-300">Esc</kbd>
               to close
+            </span>
+            <span className="inline-flex items-center rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 text-[11px] font-medium text-slate-400">
+              Scroll to view full screenshot
             </span>
             <span className="inline-flex items-center rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 text-[11px] font-medium text-slate-400">
               Click backdrop to close
@@ -149,11 +152,11 @@ export const Projects = () => {
                       {previewHost(i.link)}
                     </div>
                   </div>
-                  <div className="px-3 pb-3 pt-1">
+                  <div className="pt-1">
                     <button
                       type="button"
                       onClick={() => setLightbox({ src: i.image, name: i.name })}
-                      className="group/img relative block w-full cursor-zoom-in overflow-hidden rounded-xl bg-slate-950/50 text-left ring-1 ring-white/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue-100/50"
+                      className="group/img relative block w-full cursor-zoom-in overflow-hidden bg-slate-950/50 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-blue-100/50"
                       aria-label={`Open ${i.name} screenshot full screen`}
                     >
                       <div
@@ -166,13 +169,15 @@ export const Projects = () => {
                       >
                         Enlarge
                       </span>
-                      <img
-                        src={i.image}
-                        alt={`${i.name} preview`}
-                        className="aspect-[16/10] w-full object-cover object-top"
-                        loading="lazy"
-                        decoding="async"
-                      />
+                      <div className="aspect-[16/10] overflow-hidden bg-slate-950/50">
+                        <img
+                          src={i.image}
+                          alt={`${i.name} preview`}
+                          className="w-full h-auto object-top"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
                     </button>
                   </div>
                 </div>
